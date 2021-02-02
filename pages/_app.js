@@ -1,5 +1,10 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/react-in-jsx-scope */
+import React from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import db from '../db.json';
+
+import Head from 'next/head';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -12,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
     
     display: flex;
     flex-direction: column;
-    font-family: 'Lato', 'sans-serif';
+    font-family: 'Montserrat', 'sans-serif';
 
     color: ${({ theme }) => theme.colors.contrastText};
   }
@@ -37,7 +42,10 @@ const theme = {
 export default function App({ Component, pageProps }) {
   return (
     <>
-      
+      <Head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+      </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Component {...pageProps} />
