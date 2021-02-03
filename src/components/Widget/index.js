@@ -76,7 +76,7 @@ Widget.Topic = styled.a`
   text-decoration: none;
   color: #FFF;
   border-radius: 4px;
-  background-color: #2A2D34;
+  background-color: ${({ theme }) => theme.colors.primary};
   padding: 10px 15px;
   margin-bottom: 8px;
   cursor: pointer;

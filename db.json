@@ -1,45 +1,45 @@
 {
     "bg": "https://wonderfulengineering.com/wp-content/uploads/2016/03/Basketball-Wallpaper-2.jpg",
-    "title": "Quiz JavaScript #m4rQuiz",
+    "title": "Quiz NBA",
     "description": "Um quiz rápido sobre o mundo da NBA",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/j5P0DQIOf4PonLi55G/giphy.gif",
-        "title": "Qual a diferença entre = , == e === ?",
+        "image": "https://media2.giphy.com/media/zfWuBUb9zSAT2QGWS1/giphy.gif",
+        "title": "Quem é o melhor jogador da história da NBA?",
         "description": "Pergunta fácil em!",
         "answer": 1,
         "alternatives": [
-          "São a mesma coisa",
-          "O = significa atribuição de valor. Já == verifica a igualdade do valor, enquanto === verifica valor e tipo de variável."
+          "LeBron James",
+          "Michael Jordan"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/Ie2Hs3A0uJRtK/giphy.gif",
-        "title": "Que tipos de dados são suportados em JavaScript?",
+        "image": "https://media0.giphy.com/media/fscM6W4TJgEljD92Rq/200w.webp",
+        "title": "Qual time é o atual campeão da NBA?",
         "description": "E agora? Você sabe?",
         "answer": 0,
         "alternatives": [
-          "Number, String, Undefined, Null e Bool.",
-          "Int, String, Undefined, Null e Bool."
+          "Los Angeles Lakers",
+          "Golden State Warriors"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/iI4vhciiVh2b3j9sgo/giphy.gif",
-        "title": "Qual a diferença de window e global?",
+        "image": "https://media2.giphy.com/media/fdaURI9UjGJdjdxCAk/giphy.gif",
+        "title": "O que significa a sigla NBA?",
         "answer": 1,
         "alternatives": [
-          "São a mesma coisa",
-          "window é o escopo global no browser, e global no node"
+          "New Basketball American",
+          "National Basketball Association"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/iI4vhciiVh2b3j9sgo/giphy.gif",
-        "title": "Qual a forma antiga de trabalhar com AJAX na Web?",
+        "image": "https://media1.giphy.com/media/chPpMT1v03GWcBVwMv/giphy.gif?cid=ecf05e47sr9chjk8c8c2ybthlh1dt3p2tcz87eg3pnaojrj4&rid=giphy.gif",
+        "title": "Das três equipes citadas abaixo, qual possui mais título?",
         "answer": 1,
         "alternatives": [
-          "JSONHttpRequest",
-          "XMLHttpRequest",
-          "fetch"
+          "San Antonio Spurs",
+          "Boston Celtics",
+          "Miami Heat"
         ]
       }
     ],
