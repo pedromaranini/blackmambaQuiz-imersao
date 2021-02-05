@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Button = styled.button`
-  background-color: #A30015;
-  color: #FFF;
+  background-color: #DDC611;
+  color: #0C0355;
   border-radius: 4px;
   border: 0;
   width: 100%;
   padding: 10px 16px;
-  font-family: Montserrat;
+  font-family: JetBrains Mono;
   font-weight: bold;
   font-size: 14px;
   line-height: 1;

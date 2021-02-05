@@ -6,19 +6,19 @@ const InputBase = styled.input`
     width: 100%;
     padding: 15px;
     font-size: 14px;
-    border: 1px solid #FFF;
-    color: #FFF;
-    background-color: ${({ theme }) => theme.colors.primary};
+    border: 1px solid #DDC611;
+    color: #DDC611;
+    background-color: #0C0355;
     border-radius: 4px;
     outline: 0;
     margin-bottom: 25px;
 
-    font-family: Montserrat;
+    font-family: JetBrains Mono;
     font-size: 1rem;
     font-weight: bold;
 
     ::-webkit-input-placeholder {
-        color: #FFF;
+        color: #E0AC00;
     }
 `;
 

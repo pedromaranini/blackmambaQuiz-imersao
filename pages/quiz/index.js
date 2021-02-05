@@ -1,12 +1,14 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import db from '../db.json';
+import db from '../../db.json';
+import { Lottie } from '@crello/react-lottie';
 
-import Widget from '../src/components/Widget';
-import QuizBackground from '../src/components/QuizBackground';
-import Button from '../src/components/Button';
-import QuizContainer from '../src/components/QuizContainer';
-import AlternativesForm from '../src/components/AlternativesForm';
+import Widget from '../../src/components/Widget';
+import QuizBackground from '../../src/components/QuizBackground';
+import Button from '../../src/components/Button';
+import QuizContainer from '../../src/components/QuizContainer';
+import AlternativesForm from '../../src/components/AlternativesForm';
+import loadingAnimation from './animations/loading.json';
 
 function ResultWidget({ results }) {
   return (
@@ -60,8 +62,15 @@ function LoadingWidget() {
         Carregando . . .
       </Widget.Header>
 
-      <Widget.Content>
-        [Desafio do Loading]
+      <Widget.Content style={{ display: 'flex', justifyContent: 'center',}}>
+        <Lottie
+          width="200px"
+          height="200px"
+          className="lottie-container basic"
+          config={{ 
+            animationData: loadingAnimation, loop: true, autoplay: true 
+          }}
+        />
       </Widget.Content>
     </Widget>
   );
@@ -92,8 +101,6 @@ function QuestionWidget({ question, totalQuestions, questionIndex, onSubmit, add
       />  
             <Widget.Content>
               <h2>{question.title}</h2>
-
-              <p>{question.description}</p>
               
               <AlternativesForm onSubmit={(infosDoEvento) => {
                 infosDoEvento.preventDefault();
@@ -141,7 +148,7 @@ function QuestionWidget({ question, totalQuestions, questionIndex, onSubmit, add
               
               {/* <p>selectedAlternative: {`${selectedAlternative}`}</p> */}
               {isQuestionSubmited && isCorrect && <p>Boa jogador :)</p>}
-              {isQuestionSubmited && !isCorrect && <p>Vish, precisa pesquisar melhor :(</p>}
+              {isQuestionSubmited && !isCorrect && <p>Errou jogador :(</p>}
             </AlternativesForm>
             </Widget.Content>
           </Widget>

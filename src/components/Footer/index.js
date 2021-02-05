@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 // src/components/Footer/index.js
 const FooterWrapper = styled.footer`
-  background-color: #00000070;
+  /* background-color: ${({ theme }) => theme.colors.primary}; */
   color: #FFF;
   padding: 20px;
   display: flex;
@@ -14,7 +14,7 @@ const FooterWrapper = styled.footer`
     margin-right: 23px;
   }
   a {
-    color: #A30015;
+    color: #DDC611;;
     text-decoration: none;
     transition: .3s;
     &:hover,

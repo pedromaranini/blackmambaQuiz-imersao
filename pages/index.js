@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 import db from '../db.json';
 import Head from 'next/head';
+import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 
@@ -12,6 +13,7 @@ import QuizBackground from '../src/components/QuizBackground';
 import Input from '../src/components/Input';
 import Button from '../src/components/Button';
 import QuizContainer from '../src/components/QuizContainer';
+import Link from '../src/components/Link';
 
 
 // const BackgroundImage = styled.div`
@@ -40,12 +42,22 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg} >
       <Head>
-        <title>NBA - QUIZ</title>
+        <title>BLACKMAMBA_QUIZ</title>
       </Head>
       <QuizContainer>
-        <Widget>
+        <Widget
+        // implementando animação (framer-motion)
+          as={motion.section}
+          trasition={{ delay: 0, durantion: 0.5 }}
+          variants={{
+            show: {opacity: 1, y: '0'},
+            hidden: {opacity: 0, y: '100%'}
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Header>
-            <h1>NBA - QUIZ</h1>
+            <h1>#BLACKMAMBA_QUIZ</h1>
           </Widget.Header>
 
           <Widget.Content>
@@ -54,9 +66,9 @@ export default function Home() {
               // redirecionando para próxima rota
               router.push(`/quiz?name=${name}`);
             }}>
-              <p>Falaaa ae jogador, 
-                  bora testar seu conhecimento sobre 
-                  o melhor basquete do mundo!
+              <p>Falaaa jogador, 
+                  bora responder algumas perguntas
+                  sobre a nossa LENDA?
               </p>
               <Input 
                 name="nomeDoUsuário"
@@ -66,7 +78,7 @@ export default function Home() {
                 // alterando o nome digitado no botão
                 setName(infosDoEvento.target.value);
                 }}
-                placeholder="Diz ai seu nome jogador :)"
+                placeholder="Diz ai seu nome :)"
                 value={name}
               />
               <Button type="submit" disabled={name.length === 0}>
@@ -76,14 +88,52 @@ export default function Home() {
           </Widget.Content>
         </Widget>
           
-        <Widget>
+        <Widget
+          as={motion.section}
+          trasition={{ delay: 0.5, durantion: 0.5 }}
+          variants={{
+            show: {opacity: 1},
+            hidden: {opacity: 0}
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Content>
             <h1>QUIZES DA GALERA</h1>
-          
-            <p>Da uma olhadinha nesses quizes incríveis que o pessoal andou fazendo!</p>
+                <ul>
+                  {db.external.map((linkExterno) => {
+                    const [projectName, githubUser] = linkExterno
+                      // Expressão regular para remover a /
+                      .replace(/\//g, '')
+                      .replace('https:', '')
+                      .replace('.vercel.app', '')
+                      .split('.');
+
+                    return (
+                  <li key={linkExterno}>
+                    <Widget.Topic 
+                      as={Link}
+                      href={`/quiz/${projectName}___${githubUser}`}
+                    >
+                        {`${githubUser}/${projectName}`}
+                    </Widget.Topic>
+                  </li>
+                   );
+                  })}
+                </ul>
+
           </Widget.Content>
         </Widget>
-        <Footer />
+        <Footer 
+          as={motion.footer}
+          trasition={{ delay: 0, durantion: 0.5 }}
+          variants={{
+            show: {opacity: 1},
+            hidden: {opacity: 0}
+          }}
+          initial="hidden"
+          animate="show"
+        />
 
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/pedromaranini" />

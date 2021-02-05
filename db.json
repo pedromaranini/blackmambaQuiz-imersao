@@ -1,45 +1,43 @@
 {
-    "bg": "https://wonderfulengineering.com/wp-content/uploads/2016/03/Basketball-Wallpaper-2.jpg",
-    "title": "Quiz NBA",
-    "description": "Um quiz rápido sobre o mundo da NBA",
+    "bg": "https://images.alphacoders.com/106/1063074.jpg",
+    "title": "BLACKMAMBA QUIZ",
+    "description": "Um quiz sobre uma das maiores lendas da NBA!",
     "questions": [
       {
-        "image": "https://media2.giphy.com/media/zfWuBUb9zSAT2QGWS1/giphy.gif",
-        "title": "Quem é o melhor jogador da história da NBA?",
-        "description": "Pergunta fácil em!",
+        "image": "https://media1.giphy.com/media/eH5e8LXYBzKKI/200.webp?cid=ecf05e47h0krkrgx0a385xtim7zfj3m6kpcki2gv1a8q8ael&rid=200.webp",
+        "title": "Kobe Bryant foi selecionado em qual escolha do Draft e por qual time?",
         "answer": 1,
         "alternatives": [
-          "LeBron James",
-          "Michael Jordan"
+          "1° Escolha, LA Lakers",
+          "13° Escolha, Charlotte Hornets"
         ]
       },
       {
-        "image": "https://media0.giphy.com/media/fscM6W4TJgEljD92Rq/200w.webp",
-        "title": "Qual time é o atual campeão da NBA?",
-        "description": "E agora? Você sabe?",
+        "image": "https://media2.giphy.com/media/nYHRWagU8EDtu/200w.webp?cid=ecf05e47h0krkrgx0a385xtim7zfj3m6kpcki2gv1a8q8ael&rid=200w.webp",
+        "title": "Quantos títulos Kobe conquistou?",
         "answer": 0,
         "alternatives": [
-          "Los Angeles Lakers",
-          "Golden State Warriors"
+          "5 títulos da NBA",
+          "7 títulos da NBA"
         ]
       },
       {
-        "image": "https://media2.giphy.com/media/fdaURI9UjGJdjdxCAk/giphy.gif",
-        "title": "O que significa a sigla NBA?",
+        "image": "https://media1.giphy.com/media/l3V0D2mv3HuLDMXgA/200w.webp?cid=ecf05e47h0krkrgx0a385xtim7zfj3m6kpcki2gv1a8q8ael&rid=200w.webp",
+        "title": "Quais os anos em que Kobe conquistou seus títulos?",
         "answer": 1,
         "alternatives": [
-          "New Basketball American",
-          "National Basketball Association"
+          "2000, 2001, 2003, 2007, 2008",
+          "2000, 2001, 2002, 2009, 2010"
         ]
       },
       {
-        "image": "https://media1.giphy.com/media/chPpMT1v03GWcBVwMv/giphy.gif?cid=ecf05e47sr9chjk8c8c2ybthlh1dt3p2tcz87eg3pnaojrj4&rid=giphy.gif",
-        "title": "Das três equipes citadas abaixo, qual possui mais título?",
-        "answer": 1,
+        "image": "https://media0.giphy.com/media/q5hVhkKwKHDuo/200.webp?cid=ecf05e47qnbibqucfvk40cqprntwp223dwy4kjztn72qw5hl&rid=200.webp",
+        "title": "Em que ano Kobe Bryant foi draftado para NBA?",
+        "answer": 2,
         "alternatives": [
-          "San Antonio Spurs",
-          "Boston Celtics",
-          "Miami Heat"
+          "1998",
+          "1995",
+          "1996"
         ]
       }
     ],
