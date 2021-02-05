@@ -13,6 +13,7 @@ import QuizBackground from '../src/components/QuizBackground';
 import Input from '../src/components/Input';
 import Button from '../src/components/Button';
 import QuizContainer from '../src/components/QuizContainer';
+import QuizLogo from '../src/components/QuizLogo';
 import Link from '../src/components/Link';
 
 
@@ -45,6 +46,7 @@ export default function Home() {
         <title>BLACKMAMBA_QUIZ</title>
       </Head>
       <QuizContainer>
+        <QuizLogo />
         <Widget
         // implementando animação (framer-motion)
           as={motion.section}
