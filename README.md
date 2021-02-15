@@ -8,4 +8,4 @@
  ## 🚀 TECHNOLOGIES
   ### [*NextJS*](https://nextjs.org/)
 
-<h4 align="center">done with :heart: by Maranini during the Next Level Week 1</h4>
+<h4 align="center">done with :heart: by Maranini during the Imersão NextJS Alura/h4>
